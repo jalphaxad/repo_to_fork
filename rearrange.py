@@ -3,5 +3,5 @@ import re
 
 def rearrange(name):
 	pattern=r'^(\w+) (\w+)$'
-	return re.sub(pattern,r'\1 \2',name.strip())
-	
+	print(re.sub(pattern,r'\2 \1',name.strip()))
+rearrange('joseph makori ')	
